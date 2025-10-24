@@ -1,19 +1,20 @@
+```
 # 🧭 OrderSense — AI Demand Copilot for Wholesalers
 
 > **“Know what to order — before you run out or overstock.”**  
 > AI-driven demand forecasting and reorder optimization for wholesalers, distributors, and small retail chains.
+```
 
-
-
+```
 ## 🚀 Overview
 
 **OrderSense** helps businesses make **data-backed inventory decisions**.  
 It analyzes past sales, adjusts for events and seasonality, and recommends optimal reorder quantities per product — so you never overbuy or run out.
 
 **Built with:** FastAPI · Python · Prophet · ARIMA · Streamlit
+```
 
-
-
+```
 ## 🎯 Core Features
 
 - 📦 **Smart Demand Forecasting** — Predict product-level demand using Prophet & ARIMA.
@@ -23,9 +24,9 @@ It analyzes past sales, adjusts for events and seasonality, and recommends optim
 - 🧩 **Product Classification** — Handles perishables, non-perishables, and obsolete-prone items differently.
 - 📊 **Interactive Dashboard** — Color-coded insights powered by Streamlit + Plotly.
 - 🔍 **Explainable AI (Planned)** — Understand “why” behind each recommendation.
+```
 
-
-
+```
 ## 🧱 System Architecture
 
 Frontend (Streamlit)
@@ -39,9 +40,9 @@ Forecast Models (Prophet, ARIMA)
 Recommendation Engine
 ↓
 Storage (SQLite → Postgres)
+```
 
-
-
+```
 ## 🧩 Data Schema (Simplified)
 
 ### 🗂️ `products`
@@ -54,6 +55,7 @@ Storage (SQLite → Postgres)
 | shelf_life_days | int | Shelf life of product |
 | lead_time_days | int | Supplier delivery time |
 
+
 ### 📈 `sales`
 | Column | Type | Description |
 |--------|------|-------------|
@@ -63,6 +65,7 @@ Storage (SQLite → Postgres)
 | price | float | Optional (for profitability metrics) |
 | location | string | Optional store/region |
 
+
 ### 🔮 `forecasts`
 | Column | Type | Description |
 |--------|------|-------------|
@@ -71,6 +74,7 @@ Storage (SQLite → Postgres)
 | predicted_demand | float | Forecasted quantity |
 | confidence | float | Model confidence score |
 
+
 ### 💡 `recommendations`
 | Column | Type | Description |
 |--------|------|-------------|
@@ -78,8 +82,8 @@ Storage (SQLite → Postgres)
 | recommended_qty | float | Suggested reorder amount |
 | reason | text | Explanation (lead time, safety stock, etc.) |
 | confidence | float | Derived from forecast model |
-
-
+```
+```
 ## ⚙️ Tech Stack
 
 | Layer | Tech | Purpose |
@@ -110,9 +114,9 @@ Storage (SQLite → Postgres)
 | **v0.3**       | Integrations (QuickBooks, Shopify, Sheets) |
 | **v0.4**       | Self-learning feedback loop                |
 | **v1.0**       | SaaS-grade UI & cost control system        |
+```
 
-
-
+```
 🤝 Contributing
 
 Pull requests are welcome!
@@ -129,4 +133,4 @@ This project is licensed under the MIT License.
 Arsh Deep Singh
 📧 [arshds289@gmail.com]
 🌐 Coming soon: ordersense.ai
-
+```
