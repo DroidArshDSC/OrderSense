@@ -3,7 +3,7 @@
 > **“Know what to order — before you run out or overstock.”**  
 > AI-driven demand forecasting and reorder optimization for wholesalers, distributors, and small retail chains.
 
----
+
 
 ## 🚀 Overview
 
@@ -12,7 +12,7 @@ It analyzes past sales, adjusts for events and seasonality, and recommends optim
 
 **Built with:** FastAPI · Python · Prophet · ARIMA · Streamlit
 
----
+
 
 ## 🎯 Core Features
 
@@ -24,7 +24,7 @@ It analyzes past sales, adjusts for events and seasonality, and recommends optim
 - 📊 **Interactive Dashboard** — Color-coded insights powered by Streamlit + Plotly.
 - 🔍 **Explainable AI (Planned)** — Understand “why” behind each recommendation.
 
----
+
 
 ## 🧱 System Architecture
 
@@ -40,7 +40,7 @@ Recommendation Engine
 ↓
 Storage (SQLite → Postgres)
 
----
+
 
 ## 🧩 Data Schema (Simplified)
 
@@ -79,7 +79,6 @@ Storage (SQLite → Postgres)
 | reason | text | Explanation (lead time, safety stock, etc.) |
 | confidence | float | Derived from forecast model |
 
----
 
 ## ⚙️ Tech Stack
 
@@ -93,9 +92,7 @@ Storage (SQLite → Postgres)
 | **Database** | SQLite (local) / Postgres (prod) | Persistent storage |
 | **Version Control** | GitHub | Collaboration & CI/CD base |
 
----
 
----
 
 | Product Type       | Color     | Meaning                  |
 | ------------------ | --------- | ------------------------ |
@@ -104,9 +101,7 @@ Storage (SQLite → Postgres)
 | **Seasonal**       | 🟧 Orange | Event-driven spikes      |
 | **Obsolete-Prone** | 🟫 Grey   | Low turnover risk        |
 
----
 
----
 
 | Phase          | Focus                                      |
 | -------------- | ------------------------------------------ |
@@ -116,24 +111,18 @@ Storage (SQLite → Postgres)
 | **v0.4**       | Self-learning feedback loop                |
 | **v1.0**       | SaaS-grade UI & cost control system        |
 
----
 
----
 
 🤝 Contributing
 
 Pull requests are welcome!
 For major changes, please open an issue first to discuss what you’d like to modify or improve.
 
----
-
----
 
 🧩 License
 
 This project is licensed under the MIT License.
 
----
 
 📫 Contact
 
@@ -141,4 +130,3 @@ Arsh Deep Singh
 📧 [arshds289@gmail.com]
 🌐 Coming soon: ordersense.ai
 
----
