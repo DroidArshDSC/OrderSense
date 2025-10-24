@@ -130,6 +130,8 @@ This project is licensed under the MIT License.
 📫 Contact
 
 Arsh Deep Singh
+
 📧 [arshds289@gmail.com]
+
 🌐 Coming soon: ordersense.ai
 
