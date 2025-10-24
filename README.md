@@ -1,7 +1,7 @@
 # 🧭 OrderSense — AI Demand Copilot for Wholesalers
 
 > **“Know what to order — before you run out or overstock.”**  
-> AI-driven demand forecasting and reorder optimization for wholesalers, distributors, and small retail chains.
+AI-driven demand forecasting and reorder optimization for wholesalers, distributors, and small retail chains.
 
 
 
