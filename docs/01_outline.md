@@ -28,7 +28,58 @@ Deliver an **AI Demand Copilot** that:
 
 ---
 
-## 👤 3. Target Users
+## 🧠 3. AI Strategy & Cost Positioning
+
+### 1. Applied AI Foundation (Current)
+OrderSense is built entirely on **open-source Applied AI**, focused on time-series forecasting and explainable decision support.  
+It does **not** rely on generative AI for its core intelligence.
+
+| Function | Technology | Cost | Purpose |
+|-----------|-------------|------|----------|
+| **Forecasting** | Prophet (Meta), ARIMA (statsmodels) | Free | Predicts product-level demand trends |
+| **Event Adjustment** | Custom uplift modeling | Free | Adjusts forecasts for holidays and promotions |
+| **Data Cleaning** | Pandas, NumPy | Free | Standardizes and validates inputs |
+| **Explainability** | SHAP / LIME | Free | Shows reasoning behind predictions |
+| **Visualization** | Plotly, Streamlit | Free | Displays forecasts and recommendations |
+
+All current AI logic runs **locally** or within the backend environment — no external API calls, no credit consumption.
+
+---
+
+### 2. Generative AI Integration (Planned, Optional)
+LLMs are **not used** for forecasting accuracy.  
+They will be introduced later to enhance interpretation, automation, and user experience.
+
+| Use Case | Description | Value | Cost Model |
+|-----------|--------------|--------|-------------|
+| **Conversational Copilot (“Ask OrderSense”)** | Users query insights in natural language | Increases accessibility | Paid (token-based) |
+| **Insight Summarization** | LLM translates technical outputs into readable summaries | Improves managerial reporting | Paid (usage-based) |
+| **Schema Recognition** | Detects meaning of messy CSV columns via language understanding | Simplifies data ingestion | Optional, Paid |
+| **Exception Analysis** | Reads logs to flag anomalies (“Stockout risk for SKU-342”) | Speeds up issue detection | Optional, Paid |
+
+---
+
+### 3. Cost Positioning Summary
+
+| Phase | AI Stack | Category | Estimated Cost |
+|--------|-----------|-----------|----------------|
+| **v0.1–v0.4** | Prophet + ARIMA + SHAP | **Applied AI (Free)** | ₹0 |
+| **v0.5–v1.0** | Add LLM for insight & reports | **Generative AI (Paid)** | Usage-based |
+| **v1.1+** | Hybrid orchestration | **Applied + Generative** | Controlled subscription model |
+
+---
+
+### 4. Strategic Principle
+
+> “Forecasts are science; interpretation is service.”
+
+- **Science** (Applied AI): free, reproducible, deterministic.  
+- **Service** (Generative AI): optional, credit-based, user-facing enhancement.  
+
+This keeps core intelligence **cost-neutral**, ensuring profitability even before LLM integration.
+
+
+## 👤 4. Target Users
 
 | User Type | Description | Pain Points |
 |------------|--------------|--------------|
@@ -38,7 +89,7 @@ Deliver an **AI Demand Copilot** that:
 
 ---
 
-## 🧱 4. Core Modules (MVP Scope)
+## 🧱 5. Core Modules (MVP Scope)
 
 | Module | Description | Deliverable |
 |---------|--------------|-------------|
@@ -51,7 +102,7 @@ Deliver an **AI Demand Copilot** that:
 
 ---
 
-## ⚙️ 5. Tech Stack
+## ⚙️ 6. Tech Stack
 
 | Layer | Technology | Purpose |
 |--------|-------------|----------|
@@ -64,7 +115,7 @@ Deliver an **AI Demand Copilot** that:
 
 ---
 
-## 🧠 6. Product Classification (Core Logic)
+## 🧠 7. Product Classification (Core Logic)
 
 | Type | Description | Forecasting Strategy |
 |------|--------------|----------------------|
@@ -78,7 +129,7 @@ Color-coded in the UI for immediate visual distinction.
 
 ---
 
-## 📊 7. User Flow
+## 📊 8. User Flow
 
 Upload Sales Data → System Validates → Forecast Runs
 ↓
@@ -93,9 +144,8 @@ Users can:
 - Export reorder reports  
 - Provide feedback on forecast accuracy (future loop)
 
----
 
-## 🎨 8. Dashboard UX Overview
+## 🎨 9. Dashboard UX Overview
 
 | Section | Component | Description |
 |----------|------------|-------------|
@@ -107,7 +157,7 @@ Users can:
 
 ---
 
-## 🧭 9. Roadmap (Execution Phases)
+## 🧭 10. Roadmap (Execution Phases)
 
 | Phase | Objective | Focus |
 |--------|------------|-------|
@@ -119,7 +169,7 @@ Users can:
 
 ---
 
-## 🧩 10. Out of Scope (for MVP)
+## 🧩 11. Out of Scope (for MVP)
 
 - Logistics / Transportation Optimization  
 - Multi-warehouse routing  
@@ -130,7 +180,7 @@ These belong in post-MVP roadmap.
 
 ---
 
-## 🧾 11. Deliverables Summary
+## 🧾 12. Deliverables Summary
 
 | Deliverable | Description |
 |--------------|--------------|
