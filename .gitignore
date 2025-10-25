@@ -1,0 +1,124 @@
+# ============================================
+# 🧠 OrderSense — .gitignore
+# ============================================
+
+# --- Python & Environment ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.log
+*.sqlite3
+*.db
+*.db-journal
+.DS_Store
+.env
+.env.*
+.venv/
+venv/
+ENV/
+env.bak/
+pythonenv*
+instance/
+*.egg-info/
+.eggs/
+*.egg
+pip-log.txt
+
+# --- Build / Packaging ---
+build/
+dist/
+*.spec
+*.manifest
+*.wheel
+*.egg
+*.tar.gz
+*.zip
+
+# --- Notebooks ---
+.ipynb_checkpoints
+*.ipynb
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# --- Logs / Reports ---
+logs/
+*.log
+*.out
+*.err
+*.jsonl
+logs/**/*.json
+
+# --- Streamlit Cache ---
+.streamlit/
+.streamlit-cache/
+.streamlit/secrets.toml
+.cache/
+__cache__/
+*.streamlit.log
+
+# --- Data Files ---
+data/
+uploads/
+datasets/
+tmp/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# --- Prophet / Model Artifacts ---
+models/
+*.pkl
+*.joblib
+*.stan
+cmdstanpy_model_*/
+stan_model_*/
+
+# --- Validation / Forecast Outputs ---
+validation_reports/
+forecast_outputs/
+*.json
+*.csv
+
+# --- Test / Coverage ---
+.coverage
+coverage.xml
+htmlcov/
+pytest_cache/
+.cache/
+.pytest_cache/
+.tox/
+.nox/
+
+# --- Dependency / VirtualEnv ---
+*.lock
+requirements-lock.txt
+Pipfile.lock
+poetry.lock
+poetry.toml
+
+# --- OS Files ---
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Temporary / Misc ---
+tmp/
+temp/
+*.bak
+*.swp
+*.orig
+*.tmp
+
+# --- Project-specific ---
+/docs/__drafts__/
+/dashboard/__pycache__/
+/app/__pycache__/
+/models/__pycache__/
